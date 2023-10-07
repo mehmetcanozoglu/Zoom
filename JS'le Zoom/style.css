@@ -1,0 +1,49 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to left, rgb(43, 57, 58), rgb(38, 198, 209));
+}
+div{
+  width: 500px;
+  height: 500px;
+  border: 1px solid #000;
+  background: url(shoe-img.jpg);
+  background-size: 100% 100%;
+  position: absolute;
+  overflow: hidden;
+}
+#first{
+  top: 50%;
+  left: 20%;
+  transform: translateY(-50%);
+  border: none;
+}
+#first:hover + #second{
+  display: block;
+}
+#second{
+  background-size: 600% 600%;
+  top: 50%;
+  left: 53%;
+  transform: translateY(-50%);
+  border: 0;
+  display: none;
+}
+
+#lens{
+  width: 150px;
+  height: 150px;
+  background: rgba(0,0,0,.4);
+  position: absolute;
+  transform: translate(-50%,-50%);
+  pointer-events: none;
+  display: none;
+}
+
+
+
